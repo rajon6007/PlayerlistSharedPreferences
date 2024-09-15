@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="337dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/playerAge"
+            android:layout_width="346dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/playerName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/playerName"
+            app:layout_constraintTop_toBottomOf="@+id/playerName" />
+
+        <TextView
+            android:id="@+id/playerStatus"
+            android:layout_width="348dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/playerAge"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="@+id/playerAge"
+            app:layout_constraintTop_toBottomOf="@+id/playerAge" />
+
+        <TextView
+            android:id="@+id/playerRating"
+            android:layout_width="340dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerStatus" />
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
